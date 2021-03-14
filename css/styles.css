@@ -1,0 +1,69 @@
+/* utilities */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* ############## 
+   |   Colors   |
+   ##############*/
+/* Primary */
+/* Neutral  */
+/* Fonts */
+.wapper {
+  width: 100%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: minmax(375px, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "headerT " "ratings" "coments";
+}
+
+.ratingsContainer {
+  grid-area: ratings;
+}
+
+.comentsContainer {
+  grid-area: coments;
+}
+
+/* /utilities */
+/* components */
+.headerContainer {
+  grid-area: headerT;
+  width: 100%;
+  background-image: url("../../images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+.headerContainer__content {
+  width: 90%;
+  margin: 100px auto;
+}
+.headerContainer__content__title {
+  font-family: "Spartan", sans-serif;
+  font-size: 3.5rem;
+  color: #502050;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.headerContainer__content__subtitle {
+  text-align: center;
+  line-height: 1.5;
+  color: #937b92;
+  font-size: 1.5rem;
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+}
+
+/* /components */
+
+/*# sourceMappingURL=styles.css.map */
