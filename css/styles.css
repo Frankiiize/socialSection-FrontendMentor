@@ -28,13 +28,11 @@ html {
   position: relative;
   background-image: url("../../images/bg-pattern-top-mobile.svg");
   background-position: top left;
-  z-index: -1;
 }
 .bgContainer__bg-bot {
   position: relative;
   background-image: url("../../images/bg-pattern-bottom-mobile.svg");
   background-position: bottom right;
-  z-index: -2;
 }
 
 .wapper {
@@ -75,22 +73,28 @@ html {
 }
 
 @media only screen and (min-width: 900px) {
+  .bgContainer {
+    flex-direction: row;
+  }
   .bgContainer__bg-top {
+    width: 584px;
     height: 362px;
-    width: 100%;
+    /* width: 100%; */
     background-image: url("../../images/bg-pattern-top-desktop.svg");
   }
   .bgContainer__bg-bot {
-    width: 100%;
-    height: 675px;
+    width: 1085px;
+    height: 673px;
+    align-self: flex-end;
+    overflow-x: visible;
     background-image: url("../../images/bg-pattern-bottom-desktop.svg");
   }
 
   .wapper {
-    width: 100%;
+    width: 90%;
     max-width: 1440px;
     margin: 0 auto;
-    height: max-content;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, minmax(375px, 1fr));
     grid-template-rows: 500px auto;
@@ -124,16 +128,16 @@ html {
     margin: 0;
     justify-content: center;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
-    grid-template-rows: 320px;
+    grid-template-rows: 360px;
     column-gap: 20px;
   }
-  .comentsContainer__cards div:nth-child(1) {
+  .comentsContainer__cards__alingTop {
     align-self: flex-start;
   }
-  .comentsContainer__cards div:nth-child(2) {
+  .comentsContainer__cards__alingCen {
     align-self: center;
   }
-  .comentsContainer__cards div:nth-child(3) {
+  .comentsContainer__cards__alingBot {
     align-self: flex-end;
   }
 }
@@ -202,7 +206,8 @@ html {
   }
 }
 .ratingsCard {
-  width: 375px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #f8f2f8;
   display: flex;
   flex-direction: column;
@@ -227,18 +232,19 @@ html {
 
 @media only screen and (min-width: 900px) {
   .ratingsCard {
+    margin: 0;
+    min-width: 375px;
     width: 75%;
     flex-direction: row;
   }
 }
 .comentCard {
   width: 100%;
-  min-height: 250px;
+  height: 300px;
   display: grid;
-  grid-template-columns: 90%;
-  grid-template-rows: 40% 55% 5%;
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr;
+  padding: 40px;
   font-family: "Spartan", sans-serif;
   font-weight: 400;
   background-color: #502050;
@@ -247,14 +253,14 @@ html {
 }
 .comentCard__profile {
   grid-row: 1/2;
-  width: 90%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
 }
 .comentCard__profile__img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin-right: 20px;
 }
 .comentCard__profile__img img {
@@ -262,15 +268,18 @@ html {
   border-radius: 50%;
 }
 .comentCard__profile__user {
+  height: 60px;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 .comentCard__profile__user span {
+  font-weight: 500;
   margin-bottom: 3px;
 }
 .comentCard__profile__user span:nth-child(2) {
-  color: #937b92;
+  color: #ee68a4;
   font-weight: 500;
 }
 .comentCard__coment {
