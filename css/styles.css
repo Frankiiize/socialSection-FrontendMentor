@@ -97,7 +97,6 @@ html {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, minmax(375px, 1fr));
-    grid-template-rows: 500px auto;
     grid-template-areas: "headerT ratings" "coments coments";
   }
 
