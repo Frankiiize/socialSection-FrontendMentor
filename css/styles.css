@@ -224,7 +224,7 @@ html {
 .ratingsCard__stars span {
   margin-right: 7px;
 }
-.ratingsCard p {
+.ratingsCard h2 {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -273,11 +273,11 @@ html {
   flex-direction: column;
   justify-content: flex-end;
 }
-.comentCard__profile__user span {
+.comentCard__profile__user h4 {
   font-weight: 500;
   margin-bottom: 3px;
 }
-.comentCard__profile__user span:nth-child(2) {
+.comentCard__profile__user h4:nth-child(2) {
   color: #ee68a4;
   font-weight: 500;
 }
