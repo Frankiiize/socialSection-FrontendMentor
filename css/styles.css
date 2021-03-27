@@ -15,11 +15,12 @@ html {
 /* Primary */
 /* Neutral  */
 /* Fonts */
+
 body {
   width: 100%;
   min-width: 320px;
   min-height: 100vh;
-  background: url("../images/bg-pattern-top-mobile.svg") no-repeat top left, url("../images/bg-pattern-bottom-mobile.svg") no-repeat bottom right;
+  background: url("../../images/bg-pattern-top-mobile.svg") no-repeat top left, url("../../images/bg-pattern-bottom-mobile.svg") no-repeat bottom right;
   background-size: contain;
 }
 
@@ -64,7 +65,25 @@ body {
     width: 100%;
     min-width: 320px;
     min-height: 100vh;
-    background: url("../images/bg-pattern-top-desktop.svg") no-repeat top left, url("../images/bg-pattern-bottom-desktop.svg") no-repeat bottom right;
+    background: url("../../images/bg-pattern-top-desktop.svg") no-repeat top left, url("../../images/bg-pattern-bottom-desktop.svg") no-repeat bottom right;
+  }
+
+  .bgContainer {
+    flex-direction: row;
+  }
+  .bgContainer__bg-top {
+    width: 584px;
+    height: 362px;
+    /* width: 100%; */
+    background-image: url("https://raw.githubusercontent.com/Frankiiize/socialSection-FrontendMentor/00abbb40034ba788b3941e23b45ef99872cdba3f/images/bg-pattern-top-desktop.svg");
+  }
+  .bgContainer__bg-bot {
+    width: 1085px;
+    height: 673px;
+    align-self: flex-end;
+    overflow-x: visible;
+    background-image: url("https://raw.githubusercontent.com/Frankiiize/socialSection-FrontendMentor/00abbb40034ba788b3941e23b45ef99872cdba3f/images/bg-pattern-bottom-desktop.svg");
+
   }
 
   .wapper {
