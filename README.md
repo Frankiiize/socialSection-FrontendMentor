@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/made-with-html-and-sass-pyeYDYt80)
-- Live Site URL: [Add live site URL here](https://frankiiize.github.io/socialSection-FrontendMentor/)
+- Solution URL: [Go FrontendMentor](https://www.frontendmentor.io/solutions/made-with-html-and-sass-pyeYDYt80)
+- Live Site URL: [Go Github Pages](https://frankiiize.github.io/socialSection-FrontendMentor/)
 
 ## My process
 
@@ -38,19 +38,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+
 ## Author
 
 - Website - [Francisco Jimenez](https://github.com/Frankiiize)
