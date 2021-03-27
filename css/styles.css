@@ -74,7 +74,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(375px, 1fr));
     grid-template-areas: "headerT ratings" "coments coments";
-    row-gap: 50px;
   }
 
   .ratingsContainer {
