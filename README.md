@@ -16,7 +16,10 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ## Overview
 
+<a href="https://ibb.co/qkMM5Fq"><img src="https://i.ibb.co/9s99t3K/screencapture-frankiiize-github-io-social-Section-Frontend-Mentor-2022-10-10-13-06-19.png" alt="screencapture-frankiiize-github-io-social-Section-Frontend-Mentor-2022-10-10-13-06-19" target="_blank" border="0"></a>
+
 ### The challenge
+
 
 Users should be able to:
 
